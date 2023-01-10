@@ -29,6 +29,10 @@ type RootTranslation = {
 	 * @param {unknown} 0
 	 */
 	LINK: RequiredParams<'0'>
+	/**
+	 * S​w​i​t​c​h​ ​l​a​n​g​u​a​g​e
+	 */
+	SWITCH_LANGUAGE: string
 }
 
 export type TranslationFunctions = {
@@ -44,6 +48,10 @@ export type TranslationFunctions = {
 	 * {0}
 	 */
 	LINK: (arg0: unknown) => LocalizedString
+	/**
+	 * Switch language
+	 */
+	SWITCH_LANGUAGE: () => LocalizedString
 }
 
 export type Formatters = {}
